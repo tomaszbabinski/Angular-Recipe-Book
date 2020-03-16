@@ -8,9 +8,4 @@ import { ThrowStmt } from '@angular/compiler';
 })
 export class AppComponent {
 
-  loadedFeature = 'recipe';
-
-  onNavigate(feature: string) {
-    this.loadedFeature = feature;
-  }
 }
