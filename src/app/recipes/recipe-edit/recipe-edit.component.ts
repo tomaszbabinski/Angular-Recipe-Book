@@ -14,7 +14,9 @@ export class RecipeEditComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe(
       (params: Params) => {
+        // tslint:disable-next-line: no-string-literal
         this.id = +params['id'];
+        // tslint:disable-next-line: no-string-literal
         this.editMode = params['id'] != null;
       }
     );
