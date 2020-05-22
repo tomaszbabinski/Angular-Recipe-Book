@@ -38,14 +38,14 @@ export class AuthComponent implements OnDestroy {
 
     if (this.isLoginMode) {
       authObs = this.authService.login(email, password);
-      console.log('isLoginMode -Login: ' + this.isLoginMode);
+      // console.log('isLoginMode -Login: ' + this.isLoginMode);
     } else {
       authObs = this.authService.signup(email, password);
     }
 
     authObs.subscribe(
       resData => {
-        console.log(resData);
+        // console.log(resData);
         this.isLoading = false;
         this.router.navigate(['/recipes']);
       },
