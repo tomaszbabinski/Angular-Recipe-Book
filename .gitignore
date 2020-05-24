@@ -25,6 +25,7 @@ libpeerconnection.log/
 npm-debug.log
 testem.log
 typings/
+/src/environments/**
 
 # e2e
 e2e/*.js
@@ -32,5 +33,9 @@ e2e/*.map
 
 #System Files
 .DS_Store/
+
+
+#firebase
+.firebase/
 
 # End of https://www.gitignore.io/api/angular
