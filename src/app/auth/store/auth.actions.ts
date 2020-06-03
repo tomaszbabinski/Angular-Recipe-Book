@@ -1,5 +1,7 @@
 import { Action } from '@ngrx/store';
+import * as AuthActions from '../../store/app.reducer';
 
+export const LOGIN_START = '[Auth] Login Starts';
 export const LOGIN = '[Auth] Login';
 export const LOGOUT = '[Auth] Logout';
 
