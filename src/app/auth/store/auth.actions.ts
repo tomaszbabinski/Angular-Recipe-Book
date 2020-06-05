@@ -1,5 +1,4 @@
 import { Action } from '@ngrx/store';
-import * as AuthActions from '../../store/app.reducer';
 
 export const LOGIN_START = '[Auth] Login Starts';
 export const LOGIN = '[Auth] Login';
@@ -18,6 +17,16 @@ export class Login implements Action {
 
 export class Logout implements Action {
   readonly type = LOGOUT;
+}
+
+export class LoginStart implements Action {
+  readonly type = LOGIN_START;
+  constructor(public payload: {
+    email: string,
+    password: string
+  }) {
+
+  }
 }
 
 export type AuthActions = Login | Logout;
