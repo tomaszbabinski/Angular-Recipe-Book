@@ -69,7 +69,7 @@ export class AuthComponent implements OnDestroy, OnInit {
   }
 
   onHandleError() {
-    this.error = null;
+    this.store.dispatch(new AuthActions.ClearError());
   }
 
   showErrorAlert(message: string) {
